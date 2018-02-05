@@ -301,7 +301,7 @@ msgstr ""
 
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
-msgid "Bitcoin Network Fee Policy"
+msgid "Garlicoin Network Fee Policy"
 msgstr ""
 
 #: www/views/paymentUri.html:10
@@ -325,7 +325,7 @@ msgid "Bitcoin is secure,<br>digital money."
 msgstr ""
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Garlicoin transactions include a fee collected by miners on the network."
 msgstr ""
 
 #: www/views/modals/txp-details.html:36

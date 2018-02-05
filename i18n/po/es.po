@@ -310,7 +310,7 @@ msgstr "Dirección Bitcoin"
 
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
-msgid "Bitcoin Network Fee Policy"
+msgid "Garlicoin Network Fee Policy"
 msgstr "Política de Comisión de la Red Bitcoin"
 
 #: www/views/paymentUri.html:10
@@ -334,7 +334,7 @@ msgid "Bitcoin is secure,<br>digital money."
 msgstr "Bitcoin es seguro,<br> dinero digital."
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Garlicoin transactions include a fee collected by miners on the network."
 msgstr "Las transacciones de bitcoins incluyen una comisión recogida por los mineros de la red."
 
 #: www/views/modals/txp-details.html:36

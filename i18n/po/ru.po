@@ -310,7 +310,7 @@ msgstr "Биткойн-адрес"
 
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
-msgid "Bitcoin Network Fee Policy"
+msgid "Garlicoin Network Fee Policy"
 msgstr "Политика комиссии сети Биткойн"
 
 #: www/views/paymentUri.html:10
@@ -334,8 +334,8 @@ msgid "Bitcoin is secure,<br>digital money."
 msgstr "Биткойн это безопасные,<br>цифровые деньги."
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
-msgstr "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Garlicoin transactions include a fee collected by miners on the network."
+msgstr "Garlicoin transactions include a fee collected by miners on the network."
 
 #: www/views/modals/txp-details.html:36
 msgid "Broadcast Payment"

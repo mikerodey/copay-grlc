@@ -310,7 +310,7 @@ msgstr "Adres bitcoin"
 
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
-msgid "Bitcoin Network Fee Policy"
+msgid "Garlicoin Network Fee Policy"
 msgstr "Polityka prowizji sieci bitcoin"
 
 #: www/views/paymentUri.html:10
@@ -334,7 +334,7 @@ msgid "Bitcoin is secure,<br>digital money."
 msgstr "Bitcoin jest bezpieczny, <br>cyfrowe pieniądze."
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Garlicoin transactions include a fee collected by miners on the network."
 msgstr "Transakcje Bitcoin obejmują prowizję pobieraną przez górników w sieci."
 
 #: www/views/modals/txp-details.html:36

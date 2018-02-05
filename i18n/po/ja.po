@@ -312,7 +312,7 @@ msgstr "ビットコインアドレス"
 
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
-msgid "Bitcoin Network Fee Policy"
+msgid "Garlicoin Network Fee Policy"
 msgstr "ビットコインネットワークの手数料設定"
 
 #: www/views/paymentUri.html:10
@@ -336,7 +336,7 @@ msgid "Bitcoin is secure,<br>digital money."
 msgstr "ビットコインは世界で<br>最も安全な仮想通貨。"
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Garlicoin transactions include a fee collected by miners on the network."
 msgstr "ビットコインの取引はネットワークの安全を守る「採掘者」と呼ばれる者達に送る手数料が含まれます。"
 
 #: www/views/modals/txp-details.html:36

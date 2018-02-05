@@ -310,7 +310,7 @@ msgstr "比特币地址"
 
 #: www/views/preferencesFee.html:4
 #: www/views/tab-settings.html:85
-msgid "Bitcoin Network Fee Policy"
+msgid "Garlicoin Network Fee Policy"
 msgstr "比特币网络手续费策略"
 
 #: www/views/paymentUri.html:10
@@ -334,7 +334,7 @@ msgid "Bitcoin is secure,<br>digital money."
 msgstr "比特币是安全的 <br>数字货币。"
 
 #: www/views/preferencesFee.html:11
-msgid "Bitcoin transactions include a fee collected by miners on the network."
+msgid "Garlicoin transactions include a fee collected by miners on the network."
 msgstr "比特币交易包括在网络上被矿工所收取的费用。"
 
 #: www/views/modals/txp-details.html:36
