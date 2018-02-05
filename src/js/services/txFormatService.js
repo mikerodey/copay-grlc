@@ -164,15 +164,15 @@ angular.module('copayApp.services').factory('txFormatService', function($filter,
     var alternativeIsoCode = config.alternativeIsoCode;
 
     // If fiat currency
-    if (currency != 'bits' && currency != 'BTC') {
+    if (currency != 'bits' && currency != 'GRLC') {
       amountUnitStr = $filter('formatFiatAmount')(amount) + ' ' + currency;
       amountSat = rateService.fromFiat(amount, currency).toFixed(0);
     } else {
       amountSat = parseInt((amount * unitToSatoshi).toFixed(0));
       amountUnitStr = root.formatAmountStr(amountSat);
-      // convert unit to BTC
+      // convert unit to GRLC
       amount = (amountSat * satToBtc).toFixed(8);
-      currency = 'BTC';
+      currency = 'GRLC';
     }
 
     return {

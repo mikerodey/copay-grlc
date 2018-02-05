@@ -155,7 +155,7 @@ msgid "All Addresses"
 msgstr "Tutti gli indirizzi"
 
 #: www/views/modals/wallet-balance.html:18
-msgid "All of your bitcoin wallet balance may not be available for immediate spending."
+msgid "All of your garlicoin wallet balance may not be available for immediate spending."
 msgstr "Tutto il bilancio del tuo portafoglio potrebbe non essere disponibile ad essere speso nell'immediato."
 
 #: www/views/tab-receive.html:33
@@ -318,7 +318,7 @@ msgid "Bitcoin URI is NOT valid!"
 msgstr "Il Bitcoin URI NON è valido!"
 
 #: www/views/tab-settings.html:63
-msgid "Bitcoin Unit"
+msgid "Garlicoin unit"
 msgstr "Unità di Bitcoin"
 
 #: www/views/onboarding/tour.html:26
@@ -2947,11 +2947,11 @@ msgid "You'll receive email notifications about payments sent and received from 
 msgstr "Riceverai notifiche e-mail per i pagamenti inviati e ricevuti dai tuoi portafogli."
 
 #: www/views/includes/confirmBackupPopup.html:6
-msgid "Your bitcoin wallet is backed up!"
+msgid "Your garlicoin wallet is backed up!"
 msgstr "Il tuo portafoglio bitcoin ha eseguito il backup!"
 
 #: www/views/tab-home.html:35
-msgid "Your bitcoin wallet is ready!"
+msgid "Your garlicoin wallet is ready!"
 msgstr "Il tuo portafoglio bitcoin è pronto!"
 
 #: www/views/feedback/send.html:42

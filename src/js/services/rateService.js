@@ -44,7 +44,7 @@ RateService.prototype._fetchCurrencies = function() {
 
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
-  var rateServiceUrl = 'https://bitpay.com/api/rates';
+  var rateServiceUrl = 'https://garlicinsight.com/insight-grlc-api/rates';
 
   var retrieve = function() {
     //log.info('Fetching exchange rates');

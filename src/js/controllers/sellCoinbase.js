@@ -36,7 +36,7 @@ angular.module('copayApp.controllers').controller('sellCoinbaseController', func
 
   var checkTransaction = lodash.throttle(function(count, txp) {
     $log.warn('Check if transaction has been received by Coinbase. Try ' + count + '/5');
-    // TX amount in BTC
+    // TX amount in GRLC
     var satToBtc = 1 / 100000000;
     var amountBTC = (txp.amount * satToBtc).toFixed(8);
     coinbaseService.init(function(err, res) {
