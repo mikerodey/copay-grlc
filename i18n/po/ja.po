@@ -159,7 +159,7 @@ msgid "All of your garlicoin wallet balance may not be available for immediate s
 msgstr "ビットコインのウォレットの残高の内、即座に送れないビットコインが含まれている可能性があります。"
 
 #: www/views/tab-receive.html:33
-msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
+msgid "All signing devices must be added to this multisig wallet before garlicoin addresses can be created."
 msgstr "この共有ウォレットの必要参加者の人数が集まるまではビットコインアドレスを発行することができません。"
 
 #: www/views/tab-scan.html:21
@@ -307,7 +307,7 @@ msgid "BitPay Visa&reg; Cards"
 msgstr "BitPayのVISA&reg; カード"
 
 #: www/views/addressbook.add.html:38
-msgid "Bitcoin Address"
+msgid "Garlicoin Address"
 msgstr "ビットコインアドレス"
 
 #: www/views/preferencesFee.html:4
@@ -2062,7 +2062,7 @@ msgid "Search Transactions"
 msgstr "取引を検索"
 
 #: www/views/tab-send.html:11
-msgid "Search or enter bitcoin address"
+msgid "Search or enter garlicoin address"
 msgstr "連絡先検索かビットコインアドレスを指定"
 
 #: www/views/modals/search.html:16
@@ -2246,7 +2246,7 @@ msgid "Show advanced options"
 msgstr "詳細設定を表示"
 
 #: www/views/tab-send.html:33
-msgid "Show bitcoin address"
+msgid "Show garlicoin address"
 msgstr "ビットコインアドレスを表示"
 
 #: www/views/tab-send.html:55
@@ -2925,7 +2925,7 @@ msgid "You can make contributions by signing up on our Crowdin community transla
 msgstr "Crowdinのサイトにて翻訳者登録をして、今すぐに投稿をいただけます。お待ちしております。"
 
 #: www/views/tab-scan.html:16
-msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
+msgid "You can scan garlicoin addresses, payment requests, paper wallets, and more."
 msgstr "ビットコインアドレス、支払い請求、ペーパーウォレットなどをスキャンできます。"
 
 #: src/js/controllers/preferencesAbout.js:14
