@@ -1181,7 +1181,7 @@ msgid "I understand"
 msgstr "承知しました"
 
 #: www/views/onboarding/disclaimer.html:21
-msgid "I understand that if this app is moved to another device or deleted, my bitcoin can only be recovered with the backup phrase."
+msgid "I understand that if this app is moved to another device or deleted, my garlicoin can only be recovered with the backup phrase."
 msgstr "このアプリが別の端末に移動されたり、削除されたりした場合に、含まれたビットコインが復元フレーズからのみ復元ができることを理解しています。"
 
 #: www/views/onboarding/disclaimer.html:18
@@ -1205,7 +1205,7 @@ msgid "If enabled, wallets will also try to spend unconfirmed funds. This option
 msgstr "有効にした場合、ウォレットは未承認ビットコインも送金時の候補に含めます。これを有効にした場合、承認に時間がかかることがあります。"
 
 #: src/js/controllers/onboarding/backupRequest.js:18
-msgid "If this device is replaced or this app is deleted, neither you nor BitPay can recover your funds without a backup."
+msgid "If this device is replaced or this app is deleted, neither you nor GarlicWallet can recover your funds without a backup."
 msgstr "この端末の機種変更をしたり、アプリを削除したりした場合、端末のバックアップを取っていてもビットコインは復元されません。BitPayは復元フレーズを知らないため、お金を失ったことになります。なので、絶対に復元フレーズを書き留めて安全な場所に保管して下さい。"
 
 #: www/views/feedback/complete.html:23
@@ -1510,7 +1510,7 @@ msgid "No Wallet"
 msgstr "ウォレットが無いよ…(´・ω・`)"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no bitcoin."
+msgid "No backup, no garlicoin."
 msgstr "バックアップは非常に重要です！"
 
 #: www/views/addressbook.html:19
@@ -2297,7 +2297,7 @@ msgid "Spending Password needed"
 msgstr "パスワードが必要"
 
 #: www/views/tab-send.html:24
-msgid "Start sending bitcoin"
+msgid "Start sending garlicoin"
 msgstr "ビットコインの送金を始めましょう"
 
 #: src/js/routes.js:118

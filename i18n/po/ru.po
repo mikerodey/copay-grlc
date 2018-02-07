@@ -1179,7 +1179,7 @@ msgid "I understand"
 msgstr "Я понимаю"
 
 #: www/views/onboarding/disclaimer.html:21
-msgid "I understand that if this app is moved to another device or deleted, my bitcoin can only be recovered with the backup phrase."
+msgid "I understand that if this app is moved to another device or deleted, my garlicoin can only be recovered with the backup phrase."
 msgstr "Я осознаю, что если {{appName}} будет перемещён на другое устройство, или удален, мои биткойны будут восстановимы только с помощью ключевого словосочетания."
 
 #: www/views/onboarding/disclaimer.html:18
@@ -1203,7 +1203,7 @@ msgid "If enabled, wallets will also try to spend unconfirmed funds. This option
 msgstr "Если этот параметр включен, {{appName}} будет пытаться тратить неподтверждённые средства, что может привезти к задержкам подтверждения транзакций."
 
 #: src/js/controllers/onboarding/backupRequest.js:18
-msgid "If this device is replaced or this app is deleted, neither you nor BitPay can recover your funds without a backup."
+msgid "If this device is replaced or this app is deleted, neither you nor GarlicWallet can recover your funds without a backup."
 msgstr "Если это устройство будет заменено, или если {{appName}} будет удален, ни вы, ни BitPay не смогут восстановить доступ к вашим деньгам без резервной копии."
 
 #: www/views/feedback/complete.html:23
@@ -1508,7 +1508,7 @@ msgid "No Wallet"
 msgstr "Нет кошельков"
 
 #: www/views/onboarding/backupRequest.html:5
-msgid "No backup, no bitcoin."
+msgid "No backup, no garlicoin."
 msgstr "Нет резервной копии - нет биткойнов."
 
 #: www/views/addressbook.html:19
@@ -2293,7 +2293,7 @@ msgid "Spending Password needed"
 msgstr "Необходим платёжный пароль"
 
 #: www/views/tab-send.html:24
-msgid "Start sending bitcoin"
+msgid "Start sending garlicoin"
 msgstr "Начать отправку bitcoin"
 
 #: src/js/routes.js:118

@@ -2,7 +2,7 @@
   "packageName": "garlicwallet",
   "packageDescription": "Garlicoin Wallet",
   "packageNameId": "com.garlicinsight.garlicwallet",
-  "userVisibleName": "GarlicoinWallet",
+  "userVisibleName": "GarlicWallet",
   "purposeLine": "Garlicoin Wallet",
   "bundleName": "garlicwallet",
   "appUri": "garlicwallet",
@@ -26,8 +26,8 @@
   "androidVersion": "320000",
   "_extraCSS": null,
   "_enabledExtensions": {
-    "coinbase": true,
-    "glidera": true,
-    "amazon": true
+    "coinbase": false,
+    "glidera": false,
+    "amazon": false
   }
 }
