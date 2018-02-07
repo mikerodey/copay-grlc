@@ -2513,11 +2513,11 @@ msgid "To"
 msgstr "A"
 
 #: www/views/tab-send.html:28
-msgid "To get started, buy bitcoin or share your address. You can receive bitcoin from any wallet or service."
+msgid "To get started, buy garlicoin or share your address. You can receive garlicoin from any wallet or service."
 msgstr "Per iniziare, acquista bitcoin o condividi il tuo indirizzo. È possibile ricevere bitcoin da qualsiasi servizio o portafoglio."
 
 #: www/views/tab-send.html:29
-msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgid "To get started, you'll need to create a garlicoin wallet and get some garlicoin."
 msgstr "Per iniziare, è necessario che tu crei un portafoglio bitcoin e ottenerne qualcuno."
 
 #: www/views/modals/wallet-balance.html:23

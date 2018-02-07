@@ -2519,11 +2519,11 @@ msgid "To"
 msgstr "宛先"
 
 #: www/views/tab-send.html:28
-msgid "To get started, buy bitcoin or share your address. You can receive bitcoin from any wallet or service."
+msgid "To get started, buy garlicoin or share your address. You can receive garlicoin from any wallet or service."
 msgstr "はじめるには、ビットコインを購入したり、アドレスを他の人に共有したりしましょう。どのビットコインウォレットやサービスから受け取れます。"
 
 #: www/views/tab-send.html:29
-msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
+msgid "To get started, you'll need to create a garlicoin wallet and get some garlicoin."
 msgstr "はじめに、ビットコインウォレットを作成し、ビットコインを入手する必要があります。"
 
 #: www/views/modals/wallet-balance.html:23
