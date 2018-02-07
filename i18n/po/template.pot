@@ -150,7 +150,7 @@ msgid "All of your garlicoin wallet balance may not be available for immediate s
 msgstr ""
 
 #: www/views/tab-receive.html:33
-msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
+msgid "All signing devices must be added to this multisig wallet before garlicoin addresses can be created."
 msgstr ""
 
 #: www/views/tab-scan.html:21
@@ -296,7 +296,7 @@ msgid "BitPay Visa&reg; Cards"
 msgstr ""
 
 #: www/views/addressbook.add.html:38
-msgid "Bitcoin Address"
+msgid "Garlicoin Address"
 msgstr ""
 
 #: www/views/preferencesFee.html:4
@@ -2051,7 +2051,7 @@ msgid "Search Transactions"
 msgstr ""
 
 #: www/views/tab-send.html:11
-msgid "Search or enter bitcoin address"
+msgid "Search or enter garlicoin address"
 msgstr ""
 
 #: www/views/modals/search.html:16
@@ -2233,7 +2233,7 @@ msgid "Show advanced options"
 msgstr ""
 
 #: www/views/tab-send.html:33
-msgid "Show bitcoin address"
+msgid "Show garlicoin address"
 msgstr ""
 
 #: www/views/tab-send.html:55
@@ -2910,7 +2910,7 @@ msgid "You can make contributions by signing up on our Crowdin community transla
 msgstr ""
 
 #: www/views/tab-scan.html:16
-msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
+msgid "You can scan garlicoin addresses, payment requests, paper wallets, and more."
 msgstr ""
 
 #: src/js/controllers/preferencesAbout.js:14

@@ -8,7 +8,7 @@
       <div class="item item-heading send-heading" translate>Recipient</div>
       <div class="item item-icon-left item-icon-right input">
         <i class="icon icon-svg left"><img src="img/icon-bitcoin-symbol.svg"></i>
-        <input type="text" placeholder="{{'Search or enter bitcoin address' | translate}}" ng-model="formData.search" ng-change="findContact(formData.search)" ng-model-onblur>
+        <input type="text" placeholder="{{'Search or enter garlicoin address' | translate}}" ng-model="formData.search" ng-change="findContact(formData.search)" ng-model-onblur>
         <i class="icon icon-svg qr" on-tap="openScanner()"><img src="img/scan-ico.svg"/></i>
       </div>
     </div>
@@ -30,7 +30,7 @@
           <div class="padding">
             <button class="button button-standard button-primary" ng-click="buyBitcoin()" ng-show="hasWallets" translate>Buy Bitcoin</button>
             <button class="button button-standard button-primary" ng-click="createWallet()" ng-show="!hasWallets" translate>Create bitcoin wallet</button>
-            <button class="button button-standard button-secondary" ui-sref="tabs.receive" ng-show="hasWallets" translate>Show bitcoin address</button>
+            <button class="button button-standard button-secondary" ui-sref="tabs.receive" ng-show="hasWallets" translate>Show garlicoin address</button>
           </div>
         </div>
       </div>
