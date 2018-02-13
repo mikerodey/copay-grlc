@@ -2,7 +2,7 @@
 
 //var util = require('util');
 //var _ = require('lodash');
-//var log = require('../util/log');
+// var log = require('../util/log');
 //var preconditions = require('preconditions').singleton();
 //var request = require('request');
 
@@ -44,19 +44,21 @@ RateService.prototype._fetchCurrencies = function() {
 
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
-  var rateServiceUrl = 'https://garlicinsight.com/insight-grlc-api/rates';
+  var rateServiceUrl = 'https://gws.garlicinsight.com/gws/api/v1/fiatrates/USD/';
 
   var retrieve = function() {
-    //log.info('Fetching exchange rates');
+    // console.log('Fetching exchange rates');
     self.httprequest.get(rateServiceUrl).success(function(res) {
-      self.lodash.each(res, function(currency) {
-        self._rates[currency.code] = currency.rate;
-        self._alternatives.push({
-          name: currency.name,
-          isoCode: currency.code,
-          rate: currency.rate
-        });
-      });
+      self._rates['USD'] = res.rate;
+      // self.lodash.each(res, function(currency) {
+      //   self._rates['USD'] = currency.rate;
+      //   console.log(currency);;
+      //   // self._alternatives.push({
+      //   //   name: currency.name,
+      //   //   isoCode: currency.code,
+      //   //   rate: currency.rate
+      //   // });
+      // });
       self._isAvailable = true;
       self.lodash.each(self._queued, function(callback) {
         setTimeout(callback, 1);
