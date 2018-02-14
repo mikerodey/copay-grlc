@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         command: 'cd cordova/project && cordova build android --release',
       },
       androidsign: {
-        command: 'rm -f cordova/project/platforms/android/build/outputs/apk/android-release-signed-aligned.apk; jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ../ryan.keystore -signedjar cordova/project/platforms/android/build/outputs/apk/android-release-signed.apk  cordova/project/platforms/android/build/outputs/apk/android-release-unsigned.apk ryan && ../android-sdk-macosx/build-tools/21.1.2/zipalign -v 4 cordova/project/platforms/android/build/outputs/apk/android-release-signed.apk cordova/project/platforms/android/build/outputs/apk/android-release-signed-aligned.apk ',
+        command: 'rm -f cordova/project/platforms/android/build/outputs/apk/release/android-release-signed-aligned.apk; jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ../ryan.keystore -signedjar cordova/project/platforms/android/build/outputs/apk/release/android-release-signed.apk  cordova/project/platforms/android/build/outputs/apk/release/android-release-unsigned.apk ryan && ../android-sdk-macosx/build-tools/21.1.2/zipalign -v 4 cordova/project/platforms/android/build/outputs/apk/android-release-signed.apk cordova/project/platforms/android/build/outputs/apk/release/android-release-signed-aligned.apk ',
         stdin: true,
       },
       desktopsign: {
@@ -260,7 +260,7 @@ module.exports = function(grunt) {
   grunt.registerTask('desktop', ['prod', 'nwjs', 'copy:linux', 'compress:linux']);
   grunt.registerTask('osx', ['prod', 'nwjs', 'exec:macos', 'exec:osxsign']);
   grunt.registerTask('osx-debug', ['default', 'nwjs']);
-  grunt.registerTask('chrome', ['exec:chrome']);
+  grunt.registerTask('chrome', ['default', 'exec:chrome']);
   grunt.registerTask('wp', ['prod', 'exec:wp']);
   grunt.registerTask('wp-copy', ['default', 'exec:wpcopy']);
   grunt.registerTask('wp-init', ['default', 'exec:wpinit']);
