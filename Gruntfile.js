@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         command: 'make -C cordova clean'
       },
       macos: {
-        command: 'sh webkitbuilds/build-macos.sh sign'
+        command: 'sh webkitbuilds/build-macos.sh'
       },
       coveralls: {
         command: 'cat  coverage/report-lcov/lcov.info |./node_modules/coveralls/bin/coveralls.js'
