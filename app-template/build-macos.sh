@@ -17,12 +17,12 @@ fi
 
 # set up your app name, architecture, and background image file name
 APP_NAME="*USERVISIBLENAME*"
-# rm dmg-background.tiff
-# ln -s ../resources/*PACKAGENAME*/mac/dmg-background.tiff dmg-background.tiff
+rm dmg-background.tiff
+ln -s ../resources/*PACKAGENAME*/mac/dmg-background.tiff dmg-background.tiff
 rm volume-icon.icns
 ln -s ../resources/*PACKAGENAME*/mac/volume-icon.icns volume-icon.icns
 DMG_VOLUME_ICON="volume-icon.icns"
-# DMG_BACKGROUND_IMG="dmg-background.tiff"
+DMG_BACKGROUND_IMG="dmg-background.tiff"
 
 PATH_NAME="${APP_NAME}/osx64/"
 # you should not need to change these
@@ -34,19 +34,19 @@ DMG_FINAL="${VOL_NAME}.dmg"
 STAGING_DIR="tmp"
 
 # Check the background image DPI and convert it if it isn't 72x72
-# _BACKGROUND_IMAGE_DPI_H=`sips -g dpiHeight ${DMG_BACKGROUND_IMG} | grep -Eo '[0-9]+\.[0-9]+'`
-# _BACKGROUND_IMAGE_DPI_W=`sips -g dpiWidth ${DMG_BACKGROUND_IMG} | grep -Eo '[0-9]+\.[0-9]+'`
+_BACKGROUND_IMAGE_DPI_H=`sips -g dpiHeight ${DMG_BACKGROUND_IMG} | grep -Eo '[0-9]+\.[0-9]+'`
+_BACKGROUND_IMAGE_DPI_W=`sips -g dpiWidth ${DMG_BACKGROUND_IMG} | grep -Eo '[0-9]+\.[0-9]+'`
 
-# if [ $(echo " $_BACKGROUND_IMAGE_DPI_H != 72.0 " | bc) -eq 1 -o $(echo " $_BACKGROUND_IMAGE_DPI_W != 72.0 " | bc) -eq 1 ]; then
-#    echo "WARNING: The background image's DPI is not 72.  This will result in distorted backgrounds on Mac OS X 10.7+."
-#    echo "         I will convert it to 72 DPI for you."
+if [ $(echo " $_BACKGROUND_IMAGE_DPI_H != 72.0 " | bc) -eq 1 -o $(echo " $_BACKGROUND_IMAGE_DPI_W != 72.0 " | bc) -eq 1 ]; then
+   echo "WARNING: The background image's DPI is not 72.  This will result in distorted backgrounds on Mac OS X 10.7+."
+   echo "         I will convert it to 72 DPI for you."
 
-#    _DMG_BACKGROUND_TMP="${DMG_BACKGROUND_IMG%.*}"_dpifix."${DMG_BACKGROUND_IMG##*.}"
+   _DMG_BACKGROUND_TMP="${DMG_BACKGROUND_IMG%.*}"_dpifix."${DMG_BACKGROUND_IMG##*.}"
 
-#    sips -s dpiWidth 72 -s dpiHeight 72 ${DMG_BACKGROUND_IMG} --out ${_DMG_BACKGROUND_TMP}
+   sips -s dpiWidth 72 -s dpiHeight 72 ${DMG_BACKGROUND_IMG} --out ${_DMG_BACKGROUND_TMP}
 
-#    DMG_BACKGROUND_IMG="${_DMG_BACKGROUND_TMP}"
-# fi
+   DMG_BACKGROUND_IMG="${_DMG_BACKGROUND_TMP}"
+fi
 
 # clear out any old data
 rm -rf "${STAGING_DIR}" "${DMG_TMP}" "${DMG_FINAL}"
@@ -111,9 +111,9 @@ echo "Blessing disk image"
 bless --folder /Volumes/"${VOL_NAME}" --openfolder /Volumes/"${VOL_NAME}"
 
 # add a background image
-# echo "Adding background to disk image"
-# mkdir /Volumes/"${VOL_NAME}"/.background
-# cp "${DMG_BACKGROUND_IMG}" /Volumes/"${VOL_NAME}"/.background/
+echo "Adding background to disk image"
+mkdir /Volumes/"${VOL_NAME}"/.background
+cp "${DMG_BACKGROUND_IMG}" /Volumes/"${VOL_NAME}"/.background/
 
 echo "Adding volume icon to disk image"
 # we install this here to avoid trying to install it on linux or windows, where
