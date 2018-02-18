@@ -17,14 +17,22 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     download: {
       copay: {
-        url: 'https://garlicoin.io'
+        url: 'https://play.google.com/store/apps/details?id=com.garlicinsight.garlicwallet'
+      },
+      bitpay: {
+        url: 'https://play.google.com/store/apps/details?id=com.garlicinsight.garlicwallet'
       }
     },
 
     rateApp: {
       copay: {
         ios: 'https://garlicoin.io',
-        android: 'https://garlicoin.io',
+        android: 'https://play.google.com/store/apps/details?id=com.garlicinsight.garlicwallet',
+        wp: ''
+      },
+      bitpay: {
+        ios: 'https://garlicoin.io',
+        android: 'https://play.google.com/store/apps/details?id=com.garlicinsight.garlicwallet',
         wp: ''
       }
     },

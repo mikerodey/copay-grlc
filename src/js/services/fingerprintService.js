@@ -25,9 +25,8 @@ angular.module('copayApp.services').factory('fingerprintService', function($log,
 
   var requestFinger = function(cb) {
     try {
-      FingerprintAuth.show({
-          clientId: 'Copay',
-          clientSecret: 'hVu1NvCZOyUuGgr46bFL',
+      FingerprintAuth.encrypt({
+          clientId: 'Copay'
         },
         function(result) {
           if (result.withFingerprint) {
@@ -44,6 +43,7 @@ angular.module('copayApp.services').factory('fingerprintService', function($log,
         }
       );
     } catch (e) {
+      $log.warn(e);
       $log.warn('Finger Scan Failed:' + JSON.stringify(e));
       return cb(gettextCatalog.getString('Finger Scan Failed'));
     };
