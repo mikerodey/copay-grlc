@@ -32,7 +32,7 @@ angular.module('copayApp.services').factory('fingerprintService', function($log,
           if (result.withFingerprint) {
             $log.debug('Finger OK');
             return cb();
-          } else if (result.withPassword) {
+          } else if (result.withBackup) {
             $log.debug("Finger: Authenticated with backup password");
             return cb();
           }
