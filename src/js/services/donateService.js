@@ -34,7 +34,7 @@ angular.module('copayApp.services').factory('donateService', function($log, $sta
           // Timeout is required to enable the "Back" button
           $timeout(function() {
             $state.transitionTo('tabs.send.amount', {
-              toAddress: 'GNuk6JfjaZBV4BuZ1HW3P34bj1Z7ovJQM1'
+              toAddress: 'GVE8M5E1hwHrL7D8yW8QkU16w1L8sXTLYS'
             });
           }, 100);
         }
