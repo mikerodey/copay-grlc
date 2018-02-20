@@ -10,6 +10,7 @@
          return x.name == serviceInfo.name;
        })) {
        services.push(serviceInfo);
+       console.log(serviceInfo);
      }
    };
 
