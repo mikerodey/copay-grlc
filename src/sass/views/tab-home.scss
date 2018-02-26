@@ -1,5 +1,4 @@
 #tab-home {
-  @extend .deflash-blue;
   .icon-create-wallet {
     background-color: #4A90E2; // default wallet color
   }
@@ -16,6 +15,12 @@
   }
   .icon-amazon {
     background-image: url("../img/icon-amazon.svg");
+  }
+  .icon-garlicoin {
+    background-image: url("../img/icon-garlicoin.svg");
+  }
+  .icon-nanex {
+    background-image: url("../img/icon-nanex.svg");
   }
   .bg {
     &.wallet {

@@ -103,7 +103,7 @@ sleep 2
 echo "Adding link to /Applications"
 pushd /Volumes/"${VOL_NAME}"
 # We name the symlink with a *non-breaking space* to avoid displaying extra text
-ln -s /Applications " " # <- not your ordinary space
+ln -s /Applications # <- not your ordinary space
 popd
 
 # "bless" the folder to open it in Finder automatically when the volume is mounted

@@ -67,8 +67,8 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
       }, 100);
     }
     // data extensions for Payment Protocol with non-backwards-compatible request
-    if ((/^bitcoin:\?r=[\w+]/).exec(data)) {
-      data = decodeURIComponent(data.replace('bitcoin:?r=', ''));
+    if ((/^garlicoin:\?r=[\w+]/).exec(data)) {
+      data = decodeURIComponent(data.replace('garlicoin:?r=', ''));
       $state.go('tabs.send', {}, {
         'reload': true,
         'notify': $state.current.name == 'tabs.send' ? false : true
@@ -128,39 +128,39 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
         goToAmountPage(data);
       }
     } else if (data && data.indexOf(appConfigService.name + '://glidera') === 0) {
-      var code = getParameterByName('code', data);
-      $ionicHistory.nextViewOptions({
-        disableAnimate: true
-      });
-      $state.go('tabs.home', {}, {
-        'reload': true,
-        'notify': $state.current.name == 'tabs.home' ? false : true
-      }).then(function() {
-        $ionicHistory.nextViewOptions({
-          disableAnimate: true
-        });
-        $state.transitionTo('tabs.buyandsell.glidera', {
-          code: code
-        });
-      });
+      // var code = getParameterByName('code', data);
+      // $ionicHistory.nextViewOptions({
+      //   disableAnimate: true
+      // });
+      // $state.go('tabs.home', {}, {
+      //   'reload': true,
+      //   'notify': $state.current.name == 'tabs.home' ? false : true
+      // }).then(function() {
+      //   $ionicHistory.nextViewOptions({
+      //     disableAnimate: true
+      //   });
+      //   $state.transitionTo('tabs.buyandsell.glidera', {
+      //     code: code
+      //   });
+      // });
       return true;
 
     } else if (data && data.indexOf(appConfigService.name + '://coinbase') === 0) {
-      var code = getParameterByName('code', data);
-      $ionicHistory.nextViewOptions({
-        disableAnimate: true
-      });
-      $state.go('tabs.home', {}, {
-        'reload': true,
-        'notify': $state.current.name == 'tabs.home' ? false : true
-      }).then(function() {
-        $ionicHistory.nextViewOptions({
-          disableAnimate: true
-        });
-        $state.transitionTo('tabs.buyandsell.coinbase', {
-          code: code
-        });
-      });
+      // var code = getParameterByName('code', data);
+      // $ionicHistory.nextViewOptions({
+      //   disableAnimate: true
+      // });
+      // $state.go('tabs.home', {}, {
+      //   'reload': true,
+      //   'notify': $state.current.name == 'tabs.home' ? false : true
+      // }).then(function() {
+      //   $ionicHistory.nextViewOptions({
+      //     disableAnimate: true
+      //   });
+      //   $state.transitionTo('tabs.buyandsell.coinbase', {
+      //     code: code
+      //   });
+      // });
       return true;
 
       // BitPayCard Authentication

@@ -265,7 +265,7 @@ We release bug fixes as soon as possible for all platforms.  Usually around a we
 
 ## How to Verify Copay Signatures
 
- 1. Download the `copay@bitpay.com` public key (`gpg --recv-keys 1112CFA1`)
+ 1. Download the `copay@bitpay.com` public key (`gpg --recv-keys 56302769`)
  2. Download Copay binary (`$FILENAME`) and signature file (`$FILENAME.sig`)
  3. Verify the signature by running:
 
